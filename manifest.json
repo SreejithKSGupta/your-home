@@ -1,0 +1,34 @@
+{
+    "name": "My HomePage",
+    "description": " A custom homepage that can be used as a landing page.",
+    "version": "2.1",
+    "manifest_version": 3,
+    "icons": {
+        "16": "asas16.png",
+        "48": "asas48.png",
+        "128": "asas128.png"
+    },
+    "author": "Sreejith KS",
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "HomePage"
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+
+
+
+
+
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["script.js"]
+    }]
+
+
+
+
+
+
+}
